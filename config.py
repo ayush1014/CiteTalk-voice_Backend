@@ -35,7 +35,7 @@ class Settings(BaseSettings):
     debug: bool = Field(default=True)
     
     # CORS - stored as string, parsed to list
-    cors_origins_str: str = Field(default="http://localhost:3000,http://localhost:5173", alias="cors_origins")
+    cors_origins_str: str = Field(default="http://localhost:3000,http://localhost:5173,https://cite-talk-voice-frontend-a6sd.vercel.app", alias="cors_origins")
     
     @computed_field  # type: ignore[misc]
     @property
